@@ -139,3 +139,9 @@ CSS_URL = '/css/'
 
 SCRIPT_ROOT = os.path.join(BASE_DIR, 'script')
 SCRIPT_URL = '/script/'
+
+try:
+    from local_settings import *
+except:
+    ImportError:
+        pass
