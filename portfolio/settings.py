@@ -129,15 +129,15 @@ STATICFILES_DIRS = [
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_URL = '/static/'
+STATIC_URL = '/penpo/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/penpo/media/'
 CSS_ROOT = os.path.join(BASE_DIR, 'css')
-CSS_URL = '/css/'
+CSS_URL = '/penpo/css/'
 
 SCRIPT_ROOT = os.path.join(BASE_DIR, 'script')
-SCRIPT_URL = '/script/'
+SCRIPT_URL = '/penpo/script/'
 
 try:
     from local_settings import *
