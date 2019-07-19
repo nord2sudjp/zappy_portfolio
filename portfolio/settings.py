@@ -140,7 +140,6 @@ SCRIPT_ROOT = os.path.join(BASE_DIR, 'script')
 SCRIPT_URL = '/penpo/script/'
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
-
