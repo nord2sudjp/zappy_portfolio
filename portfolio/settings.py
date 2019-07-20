@@ -128,7 +128,7 @@ STATICFILES_DIRS = [
 # manage.py collectstatic
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'penpo/static')
 STATIC_URL = '/penpo/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
