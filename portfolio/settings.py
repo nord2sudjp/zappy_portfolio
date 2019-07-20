@@ -127,19 +127,22 @@ STATICFILES_DIRS = [
 ]
 # manage.py collectstatic
 
+HOME_PATH = r'penpo/'
+HOME_URL = r'penpo/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'penpo/static')
-STATIC_URL = '/penpo/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, HOME_PATH + 'static')
+STATIC_URL = '/' + HOME_URL + 'static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/penpo/media/'
-CSS_ROOT = os.path.join(BASE_DIR, 'css')
-CSS_URL = '/penpo/css/'
+MEDIA_ROOT = os.path.join(BASE_DIR, HOME_PATH + 'media')
+MEDIA_URL =  '/' + HOME_URL + 'media/'
+CSS_ROOT = os.path.join(BASE_DIR, HOME_PATH + 'css')
+CSS_URL = '/' + HOME_URL + 'css/'
 
-SCRIPT_ROOT = os.path.join(BASE_DIR, 'script')
-SCRIPT_URL = '/penpo/script/'
+SCRIPT_ROOT = os.path.join(BASE_DIR, HOME_PATH + 'script')
+SCRIPT_URL = HOME_URL + 'script/'
 
 try:
     from .local_settings import *
 except ImportError:
     pass
+
